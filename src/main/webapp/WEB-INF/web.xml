@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.crudweb.control.LoginServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>LogoutServlet</servlet-name>
+		<servlet-class>com.crudweb.control.LogoutServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>LogoutServlet</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>PostBlog</servlet-name>
+		<servlet-class>com.crudweb.control.PostBlogServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>PostBlog</servlet-name>
+		<url-pattern>/postblog</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetBlogs</servlet-name>
+		<servlet-class>com.crudweb.control.GetBlogsServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>GetBlogs</servlet-name>
+		<url-pattern>/getblogs</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DeleteBlog</servlet-name>
+		<servlet-class>com.crudweb.control.DeleteBlogServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>DeleteBlog</servlet-name>
+		<url-pattern>/deleteblog</url-pattern>
+	</servlet-mapping>
+</web-app>
