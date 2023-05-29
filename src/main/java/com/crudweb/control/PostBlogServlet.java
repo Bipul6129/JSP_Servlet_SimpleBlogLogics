@@ -18,10 +18,9 @@ public class PostBlogServlet extends HttpServlet{
 			int rowsAffected=pst.executeUpdate();
 			
 			if(rowsAffected>0) {
-				HttpSession session = req.getSession();
-				session.setAttribute("user-blogs", GetAllBlogs.getBlogList());
+				
 				System.out.println("data inserted ");
-				res.sendRedirect("Home.jsp");
+				
 			}else {
 				System.out.println("data not inserted");
 			}

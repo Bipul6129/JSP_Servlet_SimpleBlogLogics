@@ -1,10 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8" import="java.sql.*,java.util.*"%>
 <%@ include file="re-usable/ifnotLoggedin.jsp"%>
-<%
-	List<BlogModel> blogs = (List<BlogModel>)session.getAttribute("user-blogs");
-	
-%>
+
 
 <!DOCTYPE html>
 <html>

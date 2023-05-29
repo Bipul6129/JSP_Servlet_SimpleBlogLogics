@@ -16,13 +16,13 @@ public class LoginServlet extends HttpServlet{
 		System.out.print(username);
 		
 		UserModel currentUser = LoginLogic.getUser(username, password);
-		List<BlogModel> blogs = GetAllBlogs.getBlogList();
+
 		
 		if(currentUser!=null) {
 			System.out.println("got user");
 			HttpSession session = req.getSession();
 			session.setAttribute("user_object", currentUser);
-			session.setAttribute("user-blogs", blogs);
+
 			res.sendRedirect("Home.jsp");
 		}else {
 			System.out.println("no user");
